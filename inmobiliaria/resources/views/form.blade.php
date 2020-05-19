@@ -1,4 +1,4 @@
-<form method="GET" action="/viviendas">
+<form method="GET" action="viviendas">
     @csrf
     <label>Precio minimo</label>
     <input required type="number" name="minimo">
