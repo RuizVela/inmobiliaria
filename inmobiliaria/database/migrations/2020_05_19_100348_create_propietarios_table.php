@@ -15,6 +15,9 @@ class CreatePropietariosTable extends Migration
     {
         Schema::create('propietarios', function (Blueprint $table) {
             $table->id();
+            $table->string('nombre');
+            $table->string('apellidos');
+            $table->integer('telefono');
             $table->timestamps();
         });
     }
