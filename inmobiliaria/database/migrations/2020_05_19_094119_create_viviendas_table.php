@@ -15,7 +15,7 @@ class CreateViviendasTable extends Migration
     {
         Schema::create('viviendas', function (Blueprint $table) {
             $table->id();
-            $table->integer('precio');
+            $table->decimal('precio', 12);
             $table->integer('superficie');
             $table->integer('habitaciones');
             $table->date('construcción');

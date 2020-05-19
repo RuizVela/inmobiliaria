@@ -11,6 +11,6 @@ class ViviendaSeeder extends Seeder
      */
     public function run()
     {
-        //
+        factory(App\vivienda::class,30)->create();
     }
 }
