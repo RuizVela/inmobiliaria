@@ -21,6 +21,8 @@ class CreateViviendasTable extends Migration
             $table->date('construcción');
             $table->boolean('amueblado');
             $table->unsignedBigInteger('propietario_id');
+            $table->foreign('propietario_id')->references('id')->on('propietarios')
+            ->onUpdate('cascade')->onDelete('cascade');
             $table->timestamps();
         });
     }
