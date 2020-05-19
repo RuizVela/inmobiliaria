@@ -16,7 +16,15 @@ class ViviendaController extends Controller
     {
         //
     }
-
+    public function search(Request $request)
+    {
+        $viviendas = vivienda::all()
+        ->where('precio',">=", $request->minimo)
+        ->where('precio',"<=",$request->maximo)
+        ->where('habitaciones',">=",$request->habitaciones)
+        ->where('construcción',">=",$request->construccion);
+        return view('viviendas',['viviendas'=>$viviendas]);
+    }
     /**
      * Show the form for creating a new resource.
      *
