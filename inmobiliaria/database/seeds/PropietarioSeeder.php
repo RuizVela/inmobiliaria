@@ -11,6 +11,6 @@ class PropietarioSeeder extends Seeder
      */
     public function run()
     {
-        //
+        factory(App\propietario::class,5)->create();
     }
 }
