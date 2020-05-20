@@ -1,3 +1,4 @@
+<link href="{{ URL::asset('css/table.css') }}" rel="stylesheet">
 <table class="table">
     <tr>
         <th>Id</th>
@@ -16,7 +17,7 @@
         <th>{{$vivienda->habitaciones}}</th>
         <th>{{$vivienda->construcción}}</th>
         <th>{{$vivienda->amueblado}}</th>
-        <th>{{$vivienda->propietario_id}}</th>
+        <th>{{$vivienda->propietario->nombre}}</th>
     </tr>
     @endforeach
 </table>
