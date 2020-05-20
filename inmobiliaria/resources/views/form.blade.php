@@ -1,15 +1,16 @@
+<link href="{{ URL::asset('css/form.css') }}" rel="stylesheet">
 <form method="GET" action="viviendas">
     @csrf
     <label>Precio minimo</label>
-    <input required type="number" name="minimo">
+    <input  type="number" name="minimo">
     <br>
     <label>Precio máximo</label>
-    <input required type="number" name="maximo">
+    <input  type="number" name="maximo">
     <br>
     <label>Numero de habitaciones</label>
-    <input required type="number" name="habitaciones">
+    <input  type="number" name="habitaciones">
     <br>
-    <label>Fecha de construcción</label>
-    <input required type="date" name="construccion">
+    <label>Año de construcción</label>
+    <input  type="number" name="construccion">
 <input type="submit" value="Buscar">
 </form>
