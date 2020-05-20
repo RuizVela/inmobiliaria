@@ -5,7 +5,7 @@
         <th>Precio</th>
         <th>Superficie</th>
         <th>Habitaciones</th>
-        <th>Fecha de construcción</th>
+        <th>Año de construcción</th>
         <th>Amueblado</th>
         <th>Propietario</th>
     </tr>

@@ -18,7 +18,7 @@ class CreateViviendasTable extends Migration
             $table->decimal('precio', 12);
             $table->integer('superficie');
             $table->integer('habitaciones');
-            $table->date('construcción');
+            $table->year('construcción');
             $table->boolean('amueblado');
             $table->unsignedBigInteger('propietario_id');
             $table->foreign('propietario_id')->references('id')->on('propietarios')
