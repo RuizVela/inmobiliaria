@@ -13,3 +13,14 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
+.form {
+  left: 50;
+  position: fixed;
+}
+.table{
+  left: 500px;
+  position: absolute;
+}
+body{
+  position: absolute;
+}

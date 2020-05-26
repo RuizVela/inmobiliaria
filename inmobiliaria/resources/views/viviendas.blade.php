@@ -1,4 +1,8 @@
 <link href="{{ URL::asset('css/table.css') }}" rel="stylesheet">
+<body>
+<div class="form">
+    @include('form')
+</div>
 <table class="table">
     <tr>
         <th>Id</th>
@@ -16,8 +20,15 @@
         <th>{{$vivienda->superficie}}m2</th>
         <th>{{$vivienda->habitaciones}}</th>
         <th>{{$vivienda->construcción}}</th>
-        <th>{{$vivienda->amueblado}}</th>
+        <th>
+            @if($vivienda->amueblado == true)
+            Sí
+            @else
+            No
+            @endif
+        </th>
         <th>{{$vivienda->propietario->nombre}}</th>
     </tr>
     @endforeach
 </table>
+</body>

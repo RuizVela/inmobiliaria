@@ -18,6 +18,10 @@ class ViviendaController extends Controller
     }
     public function search(Request $request)
     {
+        if($request->maximo == 0)
+        {
+            $request->maximo = 100000000;
+        }
         $viviendas = vivienda::all()
         ->where('precio',">=", $request->minimo)
         ->where('precio',"<=",$request->maximo)
